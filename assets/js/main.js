@@ -6,6 +6,19 @@
 * License: https://bootstrapmade.com/license/
 */
 
+function sendMail(){
+  let parms = {
+    name : document.getElementById("name").value,
+    email : document.getElementById("email").value,
+    subject : document.getElementById("subject").value,
+    message : document.getElementById("message").value,
+  }
+
+  emailjs.send("service_mhuqtwf","template_2ofeu48",parms).then(alert("Email Sent!"))
+}
+
+
+
 (function() {
   "use strict";
 
