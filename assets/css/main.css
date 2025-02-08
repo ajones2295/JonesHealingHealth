@@ -802,7 +802,7 @@ section,
   background-color: #444444;
   position: relative;
   z-index: 1;
-  overflow: hidden;
+  overflow:hidden;
 }
 
 @media (max-height: 400px) {
@@ -854,8 +854,10 @@ section,
   flex-direction: column;
   z-index: 3;
 }
-.hero .carousel-item h1{
-  color: #df1529;
+.hero .carousel-item p {
+  color:#060807;
+  font-size: 80%;
+  font-weight: 500;
 }
 
 .hero .carousel-item h2 {
@@ -864,10 +866,17 @@ section,
   font-weight: 700;
   color: #130305;
   animation: fadeInDown 1s both;
+  line-height:;
 }
 
-.hero .carousel-item h2 span {
-  color: var(--accent-color);
+.hero .carousel-item h3 span {
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 700;
+    color:#e96b56;
+    animation: fadeInDown 1s both;
+  line-height: 70%;
+  
 }
 
 @media (max-width: 768px) {
@@ -876,9 +885,7 @@ section,
   }
 }
 
-.hero .carousel-item p {
-  animation: fadeInDown 1s both 0.2s;
-}
+
 
 @media (min-width: 1024px) {
 
@@ -1101,7 +1108,7 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  background-color: var(--surface-color);
+  background-color:#e96b56;
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding: 80px 20px;
